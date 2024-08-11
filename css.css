@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-family:"poppins", sans-serif;
+    background-color: rgb(237, 222, 203);
+    /* background-color: rgb(255, 255, 255); */
+}
+a,a:hover{
+    text-decoration:none;
+}
+/* .logo img{
+    width: 10%;
+} */
+/* 
+.topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+.top-bar ul{
+    list-style: none;
+    display: flex;
+}
+.top-bar li{
+    margin: 0px 5px;
+}
+
+nav{
+    position: fixed;
+    background-color: rgb(250, 250, 250);
+    padding:6px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    font-weight:bold;
+    color: rgb(0, 0, 0);
+}
+nav a:hover{
+    color:burlywood;
+}
+.logo{
+ flex: 1;
+}
+
+.logo img{
+    width: 26%;
+    height: 30%;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.menu li{
+    padding: 10px 15px;
+}
+
+.toggle{
+    font-size: 18px;
+    display:none;
+}
+@media screen and (max-width:600px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 10px 7px;
+    }
+   
+    .logo{
+        display: flex;
+    }
+} */
+
+/* Section*/
+
+.sectionimg img{
+    width:100%;
+    height: 100%;
+    display: block;
+    
+}
+
+.imgcontent{
+    margin: 2em;
+    padding: 1.1em;
+    font-size: 1.3em;
+    font-family:ui-monospace;
+}
+
+
+/* .services h2{
+    border: 4px solid red;
+    padding: 4px 10px;
+} */
+
+.services h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #5f5a54;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.statementlast{
+        color: red;
+        margin-top: 1.6em;
+        font-size: 1.8em;
+        text-align: end;
+        }
+
+.bullet{
+    font-size: 0.9em;
+  }  
+
+.services{
+    width: 100%;
+    height: 616px;
+    background-color:rgb(237, 222, 203);
+}
+
+.services span{
+    position:relative;
+    top:8px;
+    animation: mymove 0.5s;
+    animation-fill-mode: forwards;
+    border: none;
+}
+
+.servicestext{
+    margin-top: 120px;
+    margin-left: 4.78em;
+}
+
+@keyframes mymove {
+from {top: 0px;}
+to {top: 24px;}
+}
+
+.services span:hover{    
+    border-bottom : 4px solid #5f5a54;
+}
+
+
+/* services flexbox */
+
+
+.flex-container{
+    position: relative;
+    top:100px;
+    min-width: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0; /* Start with opacity set to 0 for the animation */
+    animation: fadeIn 1s forwards; /* Animation properties: name, duration, fill mode */
+}
+    /*changing opacity from 0 to 1  */
+
+    @keyframes fadeIn {
+        to {
+        opacity: 1; /* Fade in to full opacity */
+        }
+    }
+
+/* hovering the container */
+
+.flex:hover {
+    margin: 4px;
+    animation: hoverEffect 0.7s; /* Start the hover effect animation */
+    transform: scale(1.05); /* Scale up when hovered */
+  }
+
+  /* for hovering on the container */
+
+  @keyframes hoverEffect {
+    0% { transform: scale(1); } /* Start at normal scale */
+    50% { transform: scale(1.2); } /* Scale up halfway through */
+    100% { transform: scale(1); } /* Return to normal scale */
+  }
+  
+
+.flex{
+    
+    width: 400px;
+    min-height: 400px;
+    margin-right:18px;
+    border: 3px solid rgb(82, 82, 81);
+    border-radius: 6px;
+    box-shadow: 2px 3px #898989;
+    background-color: burlywood;
+}
+
+.flex-container > div {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  /* inside container box */
+
+.heading p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 18px;
+  }
+
+.details p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin-top: 3em; */
+    text-align:justify;
+    font-size: 18px;
+        flex: 1 1 auto; /* Allow flex items to grow but not shrink */
+        max-width: 100%; /* Prevent flex items from overflowing the container */
+      }
+
+.details1 p{
+    margin-top: 2px;
+}
+.details2 p{
+    margin-top: 3em;
+}
+.details3 p{
+    margin-top: 1em;
+}
+
+
+
+@media screen and (max-width:1390px){
+    .flex-container{
+        position:absolute;
+        top:20%;
+        /* flex-direction:column;  */
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 40px;
+        
+    }
+    .services h1{
+        text-align: center;
+    }
+    .services{
+        height: 1470px;
+    }
+   
+}
+
+@media screen and (max-width:400px){
+    .flex-container{
+        margin: 8px;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        margin-left:0px;
+
+
+    }
+    .services h1{
+        text-align: center;
+    }
+    .flex:hover {
+        margin: 4px;
+        animation: hoverEffect 0.7s; /* Start the hover effect animation */
+        transform: scale(1.05); /* Scale up when hovered */
+      }
+    
+      /* for hovering on the container */
+    
+      @keyframes hoverEffect {
+        0% { transform: scale(1); } /* Start at normal scale */
+        50% { transform: scale(1.2); } /* Scale up halfway through */
+        100% { transform: scale(1); } /* Return to normal scale */
+      }
+      
+      .services{
+        width: 446px;
+        height: 1540px;
+       }
+    
+   
+}
+
+/* image inside container */
+
+.contimage1 img{
+    align-items: center;
+    width: 32%;
+    height: 68px;
+}
+.contimage1{
+    margin-top: 2px;
+    text-align: center;
+}
+
+.contimage2 img{
+    align-items: center;
+    width: 32%;
+}
+.contimage2{
+    margin-top: 1em;
+    text-align: center;
+}
+
+.contimage3 img{
+    align-items: center;
+    width: 32%;
+}
+.contimage3{
+    margin-top: 1em;
+    text-align: center;
+}
+

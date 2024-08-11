@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(237, 222, 203);
+
+}
+.about-us{
+    margin-bottom: 4em;
+  height: 86vh;
+  width: 100%;
+  padding: 90px 0;
+}
+.pic{
+    
+  margin-top: 2em;
+  margin-right: 6em;
+  height: 450px;
+  border: 2px solid black;
+  width:  352px;
+  border-radius: 6px;
+}
+.pic:hover {
+    animation: hoverEffect 0.3s; /* Start the hover effect animation */
+    transform: scale(1.01); /* Scale up when hovered */
+  }
+
+  /* for hovering on the container */
+
+  @keyframes hoverEffect {
+    0% { transform: scale(1); } /* Start at normal scale */
+    50% { transform: scale(1.01); } /* Scale up halfway through */
+    100% { transform: scale(1); } /* Return to normal scale */
+  }
+.about{
+  width: 1030px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+}
+.text{
+  width: 540px;
+}
+.text h3{
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* .text h2{
+
+  font-size: 30px;
+  font-weight: 400;
+} */
+  /* margin-bottom: 10px; */
+
+.text h2 {
+
+    font-size: 30px;
+    color: #000000;
+    position: relative;
+  }
+
+
+  footer {
+    margin-top: 4.4em;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+
+}
+  
+  /* Add the line under the heading */
+ .text h2::after {
+    content: '';
+    position: absolute;
+    width: 24%;
+    height: 2px;
+    background-color: rgb(14, 12, 12); /* Line color */
+    bottom: -6px; /* Adjust the position of the line */
+    left: 0;
+    transform: scaleX(0); /* Start with zero width */
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out; /* Apply transition effect */
+  }
+  
+  /* Add hover effect to the heading */
+   .text h2:hover::after {
+    transform: scaleX(1); /* Expand the line on hover */
+  }
+  
+  
+
+.text h5{
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width:1200px){
+   
+      .pic{
+        width: 246px;
+        height: 440px;
+    }
+    
+   
+}
+
+@media screen and (max-width:970px){
+   
+    .pic{
+      display: none;
+    }
+      .text{
+        text-align: -webkit-center;
+      }
+      h2, h3 {
+        text-align: -webkit-center;
+    
+          }
+          .inp{
+            
+         float: left;
+          }
+
+         
+    }
+
+
+
+
+@media screen and (max-width:400px){
+   
+    .pic{
+      display: none;
+     
+      }
+      .about-us{
+        height: 100%;
+       
+      }
+
+     h2, h3 {
+    text-align: -webkit-center;
+
+      }
+      .text h2:hover::after {
+display:none
+      }
+button{
+    position:absolute;
+    margin-right: 3em;
+}
+ 
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+ button{
+    padding: 2px 4px;
+    border-radius: 4px;
+    border: 2px solid black;
+    background-color: #6b6b6b;
+    margin-top: 2em;
+    margin-left: -8em;
+    position: absolute;
+    left: 94%;
+ } 
+

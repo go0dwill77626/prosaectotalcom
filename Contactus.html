@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contactus.css">
+    <link rel="stylesheet" href="navbar.css">
+
+</head>
+<body>
+    <div style="display: flex">
+        <nav>
+            <div class="logo">
+               <a href="indexx.html"> <img src="logoimg.png" alt="logo"></a>
+            </div>
+            <div class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+            <div class="top-bar">
+                <ul class="menu">
+                     <li><a href="indexx.html">Home</a></li>
+                     <li><a href="services.html">Services</a></li>
+                     <li><a href="Aboutus.html">About Us </a></li>
+                     <li><a href="#">Project</a></li>
+                     <li><a href="Contactus.html">Contact Us</a></li>      
+                 </ul>
+            </div>
+        </nav>
+    
+    
+        <!-- <div class="head">
+            <h1>Contact Us</h1>
+        </div> -->
+    </div>
+   
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <!-- <form action="#" method="post"> -->
+                <form id="contact-form"  class="contact-form" method="POST" action="https://sheetdb.io/api/v1/n3nkz3hp3s826">
+                <form onsubmit="return validateNumberInput()">
+
+                <div class="form-group">
+                    <label for="Name">Name:</label><br>
+                    <input type="text" id="Name" name="Name" required>
+                </div>
+<br>
+                <div class="form-group">
+                    <label for="Contactdetails">Contact:</label><br>
+                    <input type="number" id="Contactdetails" name="Contactdetails" required>
+                    
+                </div>
+<br>
+                <div class="form-group">
+                    <label for="Address">Address:</label><br>
+                    <input type="text" id="Address" name="Address">
+                </div>
+<br>
+                <div class="form-group">
+                    <label for="Message">Message:</label> <br>
+                    <textarea id="Message" name="Message" rows="4" required></textarea>
+                </div>
+<br>
+                <div class="form-group">
+                    <!-- <button id="submit-button" class="submit-button" type="submit"  onclick="createContract()">Submit</button> -->
+                    <input type="submit"  value="Submit">
+                </div>
+            </form>
+            <script src="refer.js"></script>
+        </div>
+
+        <div class="map">
+            <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5048.061787033093!2d76.99458787836872!3d28.406462264121934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f1
+            3.1!3m3!1m2!1s0x390d3d4529ac5047%3A0x6dfe962535dafd2c!2sSector%2074A%2C%20Gurugram%2C%20Haryana%20122004!5e0!3m2!1sen!2sin!4v1693409091696!5m2!1sen!2sin" 
+            width="450" height="500" style="border: 1px solid black ; box-shadow: 2px 4px #b1b0b0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe> 
+        </div>
+
+        <div class="address">
+            <h2>Our Address</h2>
+            <address>
+                DCG1-1617, 16F, DLF CORPORATE GREENS,<br>
+                TOWER-1 SECTOR-74A,<br>
+                GURUGRAM-122004.<br>
+                HARYANA (INDIA)<br> <br>
+
+                <span><b> Email: </b></span><a href="mailto:sales@prosaectotal.com">sales@prosaectotal.com</a><br>
+                <span><b> Web: </b></span><a href="http://www.prosaectotal.com" > www.prosaectotal.com</a><br>
+                <img class="imaging" src="dlf.jpg" alt="Office view"> <br>
+            </address>
+        </div>
+        
+    </div>
+    <footer>
+      <p>&copy; Copyright 2023 PROSAEC TOTAL Pvt. Ltd. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
